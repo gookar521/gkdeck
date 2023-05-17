@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>QQ登录UI</title>
+ <style>
+ *{
+   margin:0;
+   padding:0;
+  }
+ .logo{
+   width:60.6vw;
+   display:block;
+   margin: 0 auto;
+   margin-top:10vw;
+   }
+  .user
+  {
+  width:80.4vw;
+  height:17.2vw;
+  background:rgb(242,243,247);
+  border-radius:30vw;
+  margin:0 auto;
+  margin-top:8vw;
+  font-size:4vw;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+    }
+  .pass
+  {
+  width:80.4vw;
+  height:17.2vw;
+  background:rgb(242,243,247);
+  border-radius:30vw;
+  margin:0 auto;
+  margin-top:3vw;
+  font-size:4vw;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+    }
+  .lm
+  {
+  font-size:3vw;
+  text-align:center;
+  margin-top:5vw;
+  }
+  .ty
+  {
+  display: inline-block;
+  width:4vw;
+  height:4vw;
+  border: 1px solid gray;
+  border-radius:50px;
+  transform:translateY(1vw);
+  margin-right:0.5vw;
+  }
+  .dl
+  {
+  width:25vw;
+  height:25vw;
+  margin: 0 auto;
+  display:block;
+  margin-top:15vw;
+  border-radius:100px;
+  border:none;
+  background:rgb(232,235,242);
+  font-weight:bold;
+  font-size:6.5vw;
+  color:#ffffff
+  }
+  input{
+    border:none;
+    background:rgba(0,0,0,0);
+    font-size:4.5vw;
+    text-align:center;
+  }
+#tx{
+  width:10vw;
+  border-radius:50px;
+
+   }
+ </style>
+  </head>
+  <body>	
+<img class="logo" src="logo.jpg">
+<div class="user"><img id="tx" src=""><input id="tx1" type="text" placeholder="QQ号/QID/邮箱/手机号"></div>
+<div class="pass"><input type="password" placeholder="请输入密码:"></div>
+<p class="lm"><span class="ty"></span> <span>已阅读并同意</span><span style="color:blue">服务协议</span><span>和QQ</span><span style="color:blue">隐私保护指引</span></p>
+<button class="dl">→</button>
+<script>
+document.getElementById('tx1')onkeyup=function(){
+    var qqnum = document.getElementById('tx1').value;
+
+    document.getElementById('tx').src('http://q2.qlogo.cn/headimg_dl?dst_uin='+qqnum+'&spec=100';
+    }
+</script>
+  </body>
+</html>
